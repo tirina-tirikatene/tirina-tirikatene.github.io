@@ -1,10 +1,76 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
     <title>My blog</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+      .thin-green-border {
+        border-color: green;
+        border-width: 5px;
+        border-style: dotted;
+      }
+      .smaller-image {
+        width: 400px;
+      }
+      .center-text {
+        text-align: center;
+      }
+      .resized-image {
+        width: 300px;
+        height: 200px;
+      }
+      h1 {
+        font-family: Caveat;
+        font-size: 60px;
+        color: rgb(170,240,209)
+      }
+      body {
+        font-family: Arial;
+        font-size: 20px;
+        margin: 10;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+      }
+      .left, .right {
+        flex: 1;
+        padding: 20px;
+      }
+      .left {
+        background-color: cadetblue;
+      }
+      .right {
+        background-color: rgb(247, 247, 172);
+      }
+      .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1>
-    <p>This is the beginning of my website home page.</p>
-    <p>It will eventually contain a list of links to all my blogs.</p>
-  </body>
+    <div class="left">
+      <h1 class="left-text">Kia ora Taiao! (Hello World!)</h1>
+      <img class="thin-green-border smaller-image" src="https://images.unsplash.com/photo-1644794472051-36d154dfe487?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hello world" class="resized-image">
+      <p>This is the beginning of my website home page.</p>
+      <p>It will eventually contain a list of links to all my blogs.</p>
+    </div>
+    <div class="right">
+    <p> Blog links:
+    <ul>
+     <li><a href="blog/te-houtaewa-template.html">Visit Te Houtaewa template</a></li>
+     <li> New entry coming soon </li>
+    
+    </ul>
+  </p>
+  </div>
+  <footer class="footer">
+    <p> Tirina Tirikatene Blog 2024 </p> 
+  </footer>
+ </body>
 </html>
